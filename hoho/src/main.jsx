@@ -12,11 +12,11 @@ import App from "./App.jsx";
 //   children: "click me to visit Google",
 // };
 
-const React = React.createElement(
-  "a",
-  { href: "https://google.com", target: "_blank" },
-  "click me to visit Google"
-);
+// const Element = React.createElement(
+//   "a",
+//   { href: "https://google.com", target: "_blank" },
+//   "click me to visit Google"
+// );
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>

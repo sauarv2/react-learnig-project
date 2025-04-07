@@ -48,12 +48,12 @@ function App() {
         toggleMode={toggleMode}
         ch={ch}
       />
-      <div className="container my-5">
+      <div classNameName="container my-5">
         <Alert alert={alert} showAlert={showAlert}></Alert>
 
         <About />
         {/* <Textform
-          className="form-check-label te"
+          classNameName="form-check-label te"
           mode={mode}
           heading="Enter your Text"
           showAlert={showAlert}

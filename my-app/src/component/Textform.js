@@ -39,14 +39,14 @@ function textform(props) {
   return (
     <div>
       <div
-        className="mb-3"
+        classNameName="mb-3"
         style={{
           color: props.mode === "light" ? "black" : "white",
         }}
       >
         <h1>{props.heading}</h1>
         <textarea
-          className="form-control"
+          classNameName="form-control"
           id="exampleFormControlTextarea1"
           value={text}
           onChange={handleOnChange}
@@ -61,7 +61,7 @@ function textform(props) {
         <button
           type="button"
           onClick={hendelUpclick}
-          className="btn btn-primary"
+          classNameName="btn btn-primary"
         >
           Convert
         </button>
@@ -69,7 +69,7 @@ function textform(props) {
         <button
           type="button"
           onClick={handleOnClear}
-          className="btn btn-primary mx-3"
+          classNameName="btn btn-primary mx-3"
         >
           Clear
         </button>
@@ -77,7 +77,7 @@ function textform(props) {
         <button
           type="button"
           onClick={handleOnCopy}
-          className="btn btn-primary mx-3"
+          classNameName="btn btn-primary mx-3"
         >
           Copy
         </button>
@@ -85,14 +85,14 @@ function textform(props) {
         <button
           type="button"
           onClick={handleOnRemoveExtra}
-          className="btn btn-primary mx-3"
+          classNameName="btn btn-primary mx-3"
         >
           Remove Extra Space
         </button>
       </div>
 
       <div
-        className="container"
+        classNameName="container"
         style={{
           color: props.mode === "light" ? "black" : "white",
         }}

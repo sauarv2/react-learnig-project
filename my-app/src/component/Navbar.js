@@ -4,14 +4,14 @@ export default function Nav(props) {
   return (
     <div>
       <nav
-        className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} `}
+        classNameName={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} `}
       >
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+        <div classNameName="container-fluid">
+          <a classNameName="navbar-brand" href="#">
             {props.title}
           </a>
           <button
-            className="navbar-toggler"
+            classNameName="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
@@ -19,28 +19,28 @@ export default function Nav(props) {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span classNameName="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+          <div classNameName="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul classNameName="navbar-nav">
+              <li classNameName="nav-item">
+                <a classNameName="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li classNameName="nav-item">
+                <a classNameName="nav-link" href="#">
                   {props.feature}
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
+              <li classNameName="nav-item">
+                <a classNameName="nav-link" href="#">
                   Pricing
                 </a>
               </li>
-              <li className="nav-item dropdown">
+              <li classNameName="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle"
+                  classNameName="nav-link dropdown-toggle"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -48,19 +48,19 @@ export default function Nav(props) {
                 >
                   Dropdown link
                 </a>
-                <ul className="dropdown-menu">
+                <ul classNameName="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a classNameName="dropdown-item" href="#">
                       Action
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a classNameName="dropdown-item" href="#">
                       Another action
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a classNameName="dropdown-item" href="#">
                       Something else here
                     </a>
                   </li>
@@ -69,16 +69,16 @@ export default function Nav(props) {
             </ul>
           </div>
         </div>
-        <div class="form-check form-switch">
+        <div className="form-check form-switch">
           <input
-            className="form-check-input"
+            classNameName="form-check-input"
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault"
             onClick={props.toggleMode}
           />
           <label
-            className={`form-check-label text-${props.ch}`}
+            classNameName={`form-check-label text-${props.ch}`}
             htmlFor="flexSwitchCheckDefault"
           >
             Dark Mode

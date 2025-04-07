@@ -37,13 +37,13 @@ function About() {
   };
   return (
     <div>
-      <div className="container" style={myStyle}>
-        <h2 className="about us my-3">About Us</h2>
-        <div className="accordion" id="accordionExample" style={myStyle}>
-          <div className="accordion-item">
-            <h2 className="accordion-header">
+      <div classNameName="container" style={myStyle}>
+        <h2 classNameName="about us my-3">About Us</h2>
+        <div classNameName="accordion" id="accordionExample" style={myStyle}>
+          <div classNameName="accordion-item">
+            <h2 classNameName="accordion-header">
               <button
-                className="accordion-button"
+                classNameName="accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -56,26 +56,26 @@ function About() {
             </h2>
             <div
               id="collapseOne"
-              className="accordion-collapse collapse show"
+              classNameName="accordion-collapse collapse show"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
+              <div classNameName="accordion-body">
                 <strong>This is the first item's accordion body.</strong> It is
                 shown by default, until the collapse plugin adds the appropriate
-                classNamees that we use to style each element. These classNamees
-                control the overall appearance, as well as the showing and
-                hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
+                classNameNamees that we use to style each element. These
+                classNameNamees control the overall appearance, as well as the
+                showing and hiding via CSS transitions. You can modify any of
+                this with custom CSS or overriding our default variables. It's
+                also worth noting that just about any HTML can go within the{" "}
                 <code>.accordion-body</code>, though the transition does limit
                 overflow.
               </div>
             </div>
           </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header">
+          <div classNameName="accordion-item">
+            <h2 classNameName="accordion-header">
               <button
-                className="accordion-button collapsed"
+                classNameName="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -88,26 +88,26 @@ function About() {
             </h2>
             <div
               id="collapseTwo"
-              className="accordion-collapse collapse"
+              classNameName="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
+              <div classNameName="accordion-body">
                 <strong>This is the second item's accordion body.</strong> It is
                 hidden by default, until the collapse plugin adds the
-                appropriate classNamees that we use to style each element. These
-                classNamees control the overall appearance, as well as the
-                showing and hiding via CSS transitions. You can modify any of
-                this with custom CSS or overriding our default variables. It's
-                also worth noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                appropriate classNameNamees that we use to style each element.
+                These classNameNamees control the overall appearance, as well as
+                the showing and hiding via CSS transitions. You can modify any
+                of this with custom CSS or overriding our default variables.
+                It's also worth noting that just about any HTML can go within
+                the <code>.accordion-body</code>, though the transition does
+                limit overflow.
               </div>
             </div>
           </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header">
+          <div classNameName="accordion-item">
+            <h2 classNameName="accordion-header">
               <button
-                className="accordion-button collapsed"
+                classNameName="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -120,19 +120,19 @@ function About() {
             </h2>
             <div
               id="collapseThree"
-              className="accordion-collapse collapse"
+              classNameName="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
+              <div classNameName="accordion-body">
                 <strong>This is the third item's accordion body.</strong> It is
                 hidden by default, until the collapse plugin adds the
-                appropriate classNamees that we use to style each element. These
-                classNamees control the overall appearance, as well as the
-                showing and hiding via CSS transitions. You can modify any of
-                this with custom CSS or overriding our default variables. It's
-                also worth noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                appropriate classNameNamees that we use to style each element.
+                These classNameNamees control the overall appearance, as well as
+                the showing and hiding via CSS transitions. You can modify any
+                of this with custom CSS or overriding our default variables.
+                It's also worth noting that just about any HTML can go within
+                the <code>.accordion-body</code>, though the transition does
+                limit overflow.
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ function About() {
         <button
           onClick={changeBG}
           type="button"
-          class="btn btn-primary my-4"
+          className="btn btn-primary my-4"
           style={myBtnStyle}
         >
           {mybtnText}

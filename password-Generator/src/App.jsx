@@ -23,15 +23,18 @@ function App() {
     for (let i = 0; i <= length; i++) {
       const genP = Math.floor(Math.random() * str.length + 1);
       pass += str.charAt(genP);
+
+      // console.log(pass);
     }
-    console.log(pass);
     setPassword(pass);
+    console.log(setPassword);
   }, [length, number, charallowed, setPassword]);
 
   useEffect(() => {
-    passwordGenerator;
+    passwordGenerator();
   }, [length, number, charallowed, passwordGenerator]);
   console.log(passwordGenerator);
+
   return (
     <>
       <div className="container">

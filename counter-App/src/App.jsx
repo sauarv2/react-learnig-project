@@ -6,18 +6,20 @@ function App() {
   const [count, setCount] = useState(0);
 
   let addValue = () => {
-    // let counter = count + 1;
-    // if (counter > 50) {
-    //   counter = 50;
-    // }
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
+    let counter = count + 1;
+    if (counter > 50) {
+      counter = 50;
+    }
+    // setCount((count) => count + 1);
+    // setCount((count) => count + 1);
+    // setCount((count) => count + 1);
+    // setCount((count) => count + 1);
+    // setCount((count) => count + 1);
+    // setCount((count) => count + 1);
+    // setCount((count) => count + 1);
+    setCount(counter);
   };
+
   let removeValue = () => {
     let counter = count - 1;
     if (counter < 0) {
@@ -25,14 +27,12 @@ function App() {
     }
     setCount(counter);
   };
-
   return (
     <>
-      <h1>saurav saha</h1>
-      <h2>counter APP</h2>
-      <h1>counter {count}</h1>
-      <button onClick={addValue}>click +</button>
-      <button onClick={removeValue}>click -</button>
+      <h1>counter app {count}</h1>
+      <button onClick={addValue}>click ++</button>
+
+      <button onClick={removeValue}> click --</button>
     </>
   );
 }

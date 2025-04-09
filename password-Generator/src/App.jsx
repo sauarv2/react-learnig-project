@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 import "./App.css";
 
@@ -21,44 +21,73 @@ function App() {
     if (charallowed) str += char;
 
     for (let i = 0; i <= length; i++) {
-      const genP = Math.floor(Math.random() * length + 1);
+      const genP = Math.floor(Math.random() * str.length + 1);
       pass += str.charAt(genP);
     }
     console.log(pass);
     setPassword(pass);
   }, [length, number, charallowed, setPassword]);
 
+  useEffect(() => {
+    passwordGenerator;
+  }, [length, number, charallowed, passwordGenerator]);
+  console.log(passwordGenerator);
   return (
     <>
       <div className="container">
         <h2>Password Generator</h2>
 
         <div className="form-group">
-          <label for="length">Password Length</label>
-          <input type="range" id="length" min="4" max="32" value="12" />
+          <label htmlFor="length">Password Length</label>
+          <input
+            type="range"
+            id="length"
+            min={1}
+            max={15}
+            value={length}
+            onChange={(e) => {
+              setLength(e.target.value);
+            }}
+          />
           <div className="range-value">
-            Length: <span id="rangeVal">12</span>
+            Length: <span id="rangeVal">{length}</span>
           </div>
         </div>
 
         <div className="form-group checkbox-group">
           <label>
-            <input type="checkbox" id="include-numbers" /> Include Numbers
+            <input
+              type="checkbox"
+              id="include-number"
+              defaultChecked={Number}
+              onChange={() => {
+                setNumber((tru) => !tru);
+              }}
+            />{" "}
+            Include Numbers
           </label>
           <label>
-            <input type="checkbox" id="include-symbols" /> Include Special
-            Characters
+            <input
+              type="checkbox"
+              defaultChecked={charallowed}
+              id="include-symbols"
+              onChange={() => {
+                setCharallowed((tru) => !tru);
+              }}
+            />
+            Include Special Characters
           </label>
         </div>
 
         <input
           type="text"
+          value={password}
           className="output"
           placeholder="Your password will appear here"
-          disabled
+          readOnly
         />
 
-        <button className="generate-btn">Generate Password</button>
+        {/* <button className="generate-btn">Generate Password</button> */}
       </div>
     </>
   );

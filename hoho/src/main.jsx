@@ -1,7 +1,7 @@
 // import { StrictMode } from "react";
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import "./index.css";
+import "./index.css";
 import App from "./App.jsx";
 // const reactElement = {
 //   type: "a",
